@@ -10,6 +10,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"regexp"
+	"runtime/debug"
 	"strings"
 	"time"
 
@@ -212,6 +213,8 @@ func (c *WSChannel) flush() {
 	defer func() {
 		if r := recover(); r != nil {
 			klog.V(1).Infof("Panic triggered\n")
+			klog.V(1).Infof("Panic: %v\n", r)
+			klog.V(1).Infof("Stack trace: %s\n", string(debug.Stack()))
 
 			// send error on callback
 			err := common.ErrFatalPanicRecovered
