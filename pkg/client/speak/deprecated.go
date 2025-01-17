@@ -5,8 +5,8 @@
 package speak
 
 import (
-	interfaces "github.com/deepgram/deepgram-go-sdk/pkg/client/interfaces/v1"
-	speakv1rest "github.com/deepgram/deepgram-go-sdk/pkg/client/speak/v1/rest"
+	interfaces "github.com/infinitusai/deepgram-go-sdk/pkg/client/interfaces/v1"
+	speakv1rest "github.com/infinitusai/deepgram-go-sdk/pkg/client/speak/v1/rest"
 )
 
 /***********************************/

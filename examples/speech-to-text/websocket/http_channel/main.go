@@ -13,8 +13,8 @@ import (
 	"os"
 	"reflect"
 
-	interfaces "github.com/deepgram/deepgram-go-sdk/pkg/client/interfaces"
-	client "github.com/deepgram/deepgram-go-sdk/pkg/client/listen"
+	interfaces "github.com/infinitusai/deepgram-go-sdk/pkg/client/interfaces"
+	client "github.com/infinitusai/deepgram-go-sdk/pkg/client/listen"
 )
 
 const (
